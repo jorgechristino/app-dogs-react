@@ -1,8 +1,38 @@
-# React + Vite
+# Rede social para cachorros
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição do projeto
 
-Currently, two official plugins are available:
+Site com intuito de ser uma rede social para cachorros, com login e cadastro de usuários. A plataforma oferece as seguintes funcionalidades:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Feed com todas publicações
+- Postar publicações
+- Visitar outro perfis
+- Comentar e curir publicações
+- Página com estatíticas das visualizações
+
+As requisições do sistemas, como logar na plataforma, buscar por publicações, entre outras são feitas por meio de uma API Rest.
+
+## Tecnologias Utlizadas:
+
+- HTML
+- Javascript
+- CSS
+- React
+
+## Algumas imagens do site
+
+### Feed (Home)
+
+![Feed](image.png)
+
+### Login
+
+![Login](image-1.png)
+
+### Nova Foto
+
+![New Post](image-2.png)
+
+### Post
+
+![Post](image-3.png)
