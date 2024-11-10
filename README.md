@@ -23,16 +23,16 @@ As requisições do sistemas, como logar na plataforma, buscar por publicações
 
 ### Feed (Home)
 
-![Feed](image.png)
+![Feed](feed.png)
 
 ### Login
 
-![Login](image-1.png)
+![Login](login.png)
 
 ### Nova Foto
 
-![New Post](image-2.png)
+![New Post](new-post.png)
 
 ### Post
 
-![Post](image-3.png)
+![Post](post.png)
