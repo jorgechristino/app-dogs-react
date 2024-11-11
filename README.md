@@ -18,6 +18,7 @@ As requisições do sistemas, como logar na plataforma, buscar por publicações
 - Javascript
 - CSS
 - React
+- Redux
 
 ## Algumas imagens do site
 
