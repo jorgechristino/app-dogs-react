@@ -1,15 +1,17 @@
 import React from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import { UserContext } from "../../UserContext";
 import useMedia from "../../hooks/useMedia";
 import MinhasFotos from "../../assets/feed.svg?react";
 import Estatisticas from "../../assets/estatisticas.svg?react";
 import AdicionarFoto from "../../assets/adicionar.svg?react";
 import Sair from "../../assets/sair.svg?react";
 import styles from "./UserHeaderNav.module.css";
+import { useDispatch } from "react-redux";
+import { userLogout } from "../../store/user";
 
 const UserHeaderNav = () => {
-  const { userLogout } = React.useContext(UserContext);
+  const dispatch = useDispatch();
+
   const mobile = useMedia("(max-width: 640px)");
   const [mobileMenu, setMobileMenu] = React.useState(false);
   const navigate = useNavigate();
@@ -19,7 +21,7 @@ const UserHeaderNav = () => {
   }, [pathname]);
 
   function handleLogout() {
-    userLogout();
+    dispatch(userLogout());
     navigate("/login");
   }
 

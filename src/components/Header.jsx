@@ -2,10 +2,11 @@ import React from "react";
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
 import Dogs from "../assets/dogs.svg?react";
-import { UserContext } from "../UserContext";
+import { useSelector } from "react-redux";
 
 const Header = () => {
-  const { data } = React.useContext(UserContext);
+  const { data } = useSelector((state) => state.user);
+
   return (
     <div className={styles.header}>
       <nav className={`${styles.nav} container`}>
