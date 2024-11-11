@@ -14,7 +14,9 @@ const LoginForm = () => {
   const username = useForm();
   const password = useForm();
 
-  const { token, user } = useSelector((state) => state);
+  const token = useSelector((state) => state.token);
+  const user = useSelector((state) => state.user);
+
   const loading = token.loading || user.loading;
   const error = token.error || user.error;
   const dispatch = useDispatch();
